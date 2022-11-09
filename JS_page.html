@@ -164,7 +164,7 @@ console.log(z); // Output: 4
 					<td>increase (++) or decrease (--) the value of a variable by 1.</td>
 				</tr>
 				<tr>
-					<td>Template litteral (string interpolation)</td>
+					<td>Template litteral (string interpolation) (``)</td>
 					<td>
 						<pre>
 const myPet = 'armadillo';
@@ -189,18 +189,18 @@ console.log(`I own a pet ${myPet}.`);
 					</td>
 				</tr>
 				<tr>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-				</tr>
-				
+					<td>String concatenation</td>
+					<td>
+						<pre>
+let service = 'credit card';
+let month = 'May 30th'; 
+let displayText = 'Your ' + service  + ' bill is due on ' +  month + '.';
+
+console.log(displayText);
+// Prints: Your credit card bill is due on May 30th.
+						</pre>
+					</td>
+				</tr>				
 			</tbody>
 		</table>
 
@@ -215,14 +215,110 @@ console.log(`I own a pet ${myPet}.`);
 		<table class="table">
 			<thead>
 				<tr>
-					<th></th>
-					<th></th>
+					<th>Concepts</th>
+					<th>Meaning</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<td></td>
-					<td></td>
+					<td>Control flow</td>
+					<td>Order in which statements are executed in a program, can be altered by control structures (i.e. conditionnals).</td>
+				</tr>
+				<tr>
+					<td>if(true or false) {}</td>
+					<td>If true : execute, if false: block.</td>
+				</tr>
+				<tr>
+					<td>if...else {}</td>
+					<td>Adds a default behavior when the statement is false.</td>
+				</tr>
+				<tr>
+					<td>Comparison statements</td>
+					<td>
+						<ul>
+							<li>Lesser than : <</li>
+							<li>Greater than : ></li>
+							<li>Lesser or equal : <=</li>
+							<li>Greater or equal : >=</li>
+							<li>Equal : ===</li>
+							<li>Not equal : !==</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>Logical operators</td>
+					<td>
+						<ul>
+							<li>The 'and' operator : &&</li>
+							<li>The 'or' operator : ||</li>
+							<li>The 'not' (or 'bang') operator : !</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>Thruthy values</td>
+					<td>Values that evaluate to 'true' when checked as a condition.</td>
+				</tr>
+				<tr>
+					<td>Falsy values</td>
+					<td>Values that evaluate to 'false' when checked as a condition (i.e. 0, "", '', Undifined, NaN...)</td>
+				</tr>
+				
+				<tr>
+					<td>Ternary operation</td>
+					<td>condition ? expression1 : expression2;</td>
+				</tr>
+				<tr>
+					<td>else if</td>
+					<td>Allows to add multiple statement between if... and ...else.<br>
+						i.e. :<pre>
+const size = 10;
+
+if (size > 100) {
+  console.log('Big');
+} else if (size > 20) {
+  console.log('Medium');
+} else if (size > 4) {
+  console.log('Small');
+} else {
+  console.log('Tiny');
+}
+// Print: Small</pre>
+					</td>
+				</tr>
+				<tr>
+					<td>switch (compared value) {<br>
+						&nbsp;case 'value1' :<br>
+						&nbsp;&nbsp;console.log();<br>
+						&nbsp;&nbsp;break;<br>
+						&nbsp;case 'value2' :<br>
+						&nbsp;&nbsp;console.log();<br>
+						&nbsp;&nbsp;break;<br>
+						&nbsp;default:<br>
+						&nbsp;&nbsp;console.log();<br>
+						&nbsp;}</td>
+					<td>i.e; :
+						<pre>
+let groceryItem = 'papaya';
+ 
+switch (groceryItem) {
+  case 'tomato':
+    console.log('Tomatoes are $0.49');
+    break;
+  case 'lime':
+    console.log('Limes are $1.49');
+    break;
+  case 'papaya':
+    console.log('Papayas are $1.29');
+    break;
+  default:
+    console.log('Invalid item');
+    break;
+}
+ 
+// Prints 'Papayas are $1.29'
+						</pre>
+					</td>
 				</tr>
 				
 			</tbody>
