@@ -59,8 +59,12 @@
 					<td>Class selector.</td>
 				</tr>
 				<tr>
-					<td>.stuff.stuff</td>
-					<td>Selects a two word class.</td>
+					<td>.stuff1.stuff2</td>
+					<td>Selects an element that has the two classes : class concatenation.</td>
+				</tr>
+				<tr>
+					<td>.stuff1 .stuff2</td>
+					<td>Selects the child element (stuff2) inside the parent (stuff1). </td>
 				</tr>
 				<tr>
 					<td>#stuff</td>
@@ -177,15 +181,23 @@
 				</tr>
 				<tr>
 					<td>opacity:</td>
-					<td>0=transparent 1=opaque.</td>
+					<td>0=transparent 1=opaque (can also be set in %).</td>
 				</tr>
 				<tr>
 					<td>box-shadow:</td>
-					<td>top right bottom left color</td>
+					<td>x-offset y-offset blur spread color</td>
 				</tr>
 				<tr>
 					<td>text-shadow:</td>
 					<td>top right bottom left color</td>
+				</tr>
+				<tr>
+					<td>filter:</td>
+					<td>Complete list of filter effects (grayscale, blur, invert...) <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">here</a>.</td>
+				</tr>
+				<tr>
+					<td>transform:</td>
+					<td>Complete list of transformations (rotate, translate, scale...) <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">here</a>.</td>
 				</tr>
 				<tr>
 					<td>background-image:</td>
@@ -270,7 +282,8 @@
 							<li>width (thin, medium, thick, px, em, rem, %...)</li>
 							<li>style (none, dotted, inset, dashed...)</li>
 							<li>color</li>
-							<li>radius (px, em, %)</li>
+							<li>-radius (px, em, %)</li>
+							<li>-top, -right, -bottom, -left</li>
 						</ul>
 					</td>
 				</tr>
